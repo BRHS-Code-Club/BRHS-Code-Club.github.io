@@ -1,0 +1,57 @@
+#brhs-logo {
+    width: 250px;
+    height: 250px;
+}
+
+#pfp1{
+    width: 200px;
+    height: 200px;
+}
+#pfp2{
+    width: 200px;
+    height: 200px;
+}
+#pfp3{
+    width: 200px;
+    height: 200px;
+}
+#pfp4{
+    width: 200px;
+    height: 200px;
+}
+#pfp5{
+    width: 200px;
+    height: 200px;
+}
+
+.description {
+   margin-right: 10%;
+}
+
+#profile1 {
+    padding-left: 10%;
+}
+#profile2 {
+    padding-left: 5%;
+}
+
+
+
+#code-logo{
+    width: 300px;
+    height: 300px;
+}
+
+#nav-logo {
+    width: 80px;
+    height: 80px;
+}
+
+#jumbo{
+    background-color: rgb(203, 196, 159);
+}
+
+#jumbotext{
+    font-family: 'Courier New';
+    font-family: 'Times New Roman';
+}
