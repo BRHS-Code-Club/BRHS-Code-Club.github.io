@@ -1,41 +1,24 @@
+#activities {
+    background-color: rgb(170, 201, 215);
+    padding: 5% 5%;
+}
+#info {
+    margin: 2% 5%;
+}
+#contact {
+    padding: 2% 0%;
+    background-color: rgb(203, 196, 159);
+    height: 200px;
+}
+#emails {
+    padding: 0% 7%;
+    line-height: 80%;
+}
+
 #brhs-logo {
     width: 250px;
     height: 250px;
 }
-
-#pfp1{
-    width: 200px;
-    height: 200px;
-}
-#pfp2{
-    width: 200px;
-    height: 200px;
-}
-#pfp3{
-    width: 200px;
-    height: 200px;
-}
-#pfp4{
-    width: 200px;
-    height: 200px;
-}
-#pfp5{
-    width: 200px;
-    height: 200px;
-}
-
-.description {
-   margin-right: 10%;
-}
-
-#profile1 {
-    padding-left: 10%;
-}
-#profile2 {
-    padding-left: 5%;
-}
-
-
 
 #code-logo{
     width: 300px;
@@ -55,3 +38,94 @@
     font-family: 'Courier New';
     font-family: 'Times New Roman';
 }
+
+
+
+
+/**         About Us            **/
+#about-heading {
+    text-align: center;
+    padding: 2% 0%;
+}
+#advisor {
+    padding-top: 3%;
+    padding-left: 5%;
+    height: 270px;
+    background-color: rgb(247, 193, 179);
+}
+#advisor-img {
+    width: 200px;
+    height: 200px;
+}
+#pfp1{
+    margin-top: 10%;
+    margin-left: 5%;
+    width: 200px;
+    height: 200px;
+}
+.pfp{
+    margin-top: 10%;
+    margin-left: 5%;
+    width: 200px;
+    height: 200px;
+}
+#pfp2{
+    margin-top: 10%;
+    margin-left: 5%;
+    width: 200px;
+    height: 200px;
+}
+#pfp3{
+    margin-top: 10%;
+    margin-left: 5%;
+    width: 200px;
+    height: 200px;
+}
+#pfp4{
+    margin-top: 10%;
+    margin-left: 5%;
+    width: 200px;
+    height: 200px;
+}
+#pfp5{
+    margin-top: 10%;
+    margin-left: 5%;
+    width: 200px;
+    height: 200px;
+}
+#profile1 {
+    padding-left: 8%;
+    padding-top: 10%;
+    background-color: beige;
+    height: 350px;
+}
+#profile2 {
+    padding-left: 5%;
+    padding-top: 10%;
+    background-color: rgb(209, 240, 255);
+    height: 350px;
+}
+#profile3 {
+    padding-left: 8%;
+    padding-top: 10%;
+    background-color: rgb(209, 240, 255);
+    height: 350px;
+}
+#profile4 {
+    padding-left: 5%;
+    padding-top: 10%;
+    background-color: beige;
+    height: 350px;
+}
+#profile5 {
+    padding-left: 8%;
+    padding-top: 10%;
+    background-color: beige;
+    height: 350px;
+}
+
+/**         Resources           **/
+
+
+
+
