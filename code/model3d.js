@@ -19,9 +19,19 @@ class Model3d extends HTMLElement{
 
             let createScene = function () {
                 var scene = new BABYLON.Scene(engine);
-                var camera = new BABYLON.ArcRotateCamera("camera", -Math.PI / 2, 
-                    Math.PI / 2.5, 3, new BABYLON.Vector3(0,0,0), scene);
+                var camera = new BABYLON.ArcRotateCamera("camera", 0, 
+                    0, 0, new BABYLON.Vector3(0,0,0), scene);
                 camera.attachControl(cnv, true);
+                /*var skybox = BABYLON.MeshBuilder.CreateBox("skyBox", {size:1.0}, scene);
+	            var skyboxMaterial = new BABYLON.StandardMaterial("skyBox", scene);
+	            skyboxMaterial.backFaceCulling = false;
+	            skyboxMaterial.reflectionTexture = new BABYLON.CubeTexture("../skybox", scene);
+	            skyboxMaterial.reflectionTexture.coordinatesMode = BABYLON.Texture.SKYBOX_MODE;
+	            skyboxMaterial.disableLighting = true;
+	            skybox.material = skyboxMaterial;*/
+                scene.clearColor = new BABYLON.Color3(0.5, 0.8, 0.5);
+                
+                var light = new BABYLON.HemisphericLight("HemiLight", new BABYLON.Vector3(0,1,0), scene);
                 
                 return scene;
             }
@@ -66,7 +76,6 @@ class Model3d extends HTMLElement{
             return scene;
         };
 
-        /*LOAD 3D MODEL*/
         //method that loads a 3d model into the created scene
         let loadGLTFAux = function(file){
             scene.meshes.pop();
@@ -74,7 +83,7 @@ class Model3d extends HTMLElement{
             var assetsManager = new BABYLON.AssetsManager(scene);
             const meshTask = assetsManager.addMeshTask('glb task', '', path[0], path[1]);
             meshTask.onSuccess = function (task){
-                task.loadedMeshes[0].position = new BABYLON.Vector3(0,0,0);
+                task.loadedMeshes[0].position = new BABYLON.Vector3.Zero();
             }
             meshTask.onError = function(task, message, exception){
                 console.log(message, exception);
@@ -115,7 +124,6 @@ class Model3d extends HTMLElement{
         };
     }
 
-    /*HANDLING ATTRIBUTES*/
     static get observedAttributes(){
         return ['src', 'background-color'];
     }

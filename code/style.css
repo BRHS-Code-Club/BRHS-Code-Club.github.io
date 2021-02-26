@@ -1,6 +1,11 @@
 #activities {
-    background-color: rgb(170, 201, 215);
+    background-color: rgb(2, 70, 147);
+    color: rgb(255, 255, 255);
     padding: 5% 5%;
+}
+#est{
+    color: rgb(2, 70, 147);
+    font-weight: 600;
 }
 #info {
     margin: 2% 5%;
@@ -30,6 +35,14 @@
     height: 80px;
 }
 
+.main-nav{
+    background-color: rgb(2, 70, 147);
+}
+
+.nav-item > a{
+    color:white;
+}
+
 #jumbo{
     background-color: rgb(203, 196, 159);
 }
@@ -51,7 +64,7 @@
     padding-top: 3%;
     padding-left: 5%;
     height: 270px;
-    background-color: rgb(247, 193, 179);
+    background-color: rgb(83, 152, 237);
 }
 #advisor-img {
     width: 200px;
@@ -121,10 +134,23 @@
     padding-left: 8%;
     padding-top: 10%;
     background-color: beige;
-    height: 350px;
+    height: 470px;
+}
+#profile6 {
+    background-color: rgb(209, 240, 255);
 }
 
 /**         Resources           **/
+#acsl{
+    background-color: blanchedalmond;
+    padding: 3% 6%;
+}
+#java-heading {
+    margin: 2% 0%;
+}
+#resource-heading {
+    margin: 2% 0%;
+}
 
 
 
