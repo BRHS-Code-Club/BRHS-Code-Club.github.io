@@ -33,6 +33,9 @@
     width: 80px;
     height: 80px;
 }
+.navbar-toggler-icon{
+    background-image: url(https://cdn3.iconfinder.com/data/icons/photo-camera-ui/512/mobile-navigation-bar-menu-responsive-ui-512.png);
+    }
 
 #main-nav{
     background-color: rgb(2, 70, 147);
