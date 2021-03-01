@@ -3,45 +3,43 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>CODE Club</title>
+    <title>BR CODE Club</title>
     <script src="model3d.js"></script>
 </head>
 
 <body>
-    <!--NAVBAR-->
-    <div class="main-nav">
-    <nav class="navbar navbar-expand-lg shadow">
-        <div class="container-fluid">
-           <div class="navbar-header">
-               <a class="navbar-brand">
-                   <img id="nav-logo" src="Images/code logo-white.png" alt="logo">
-               </a>
-               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                   aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-               </button>
-           </div>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="resources.html">Resources</a>
-              </li>
-            </ul>
-          </div>
+  <!--NAVBAR-->
+  <div id="main-nav"> 
+    <nav class="navbar navbar-expand-lg shadow" >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img id="nav-logo" src="Images/code logo-white.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="resources.html">Resources</a>
+            </li>            
+          </ul>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
+  </div>
 
     <div id="jumbo" class="jumbotron text-center text-white" >
         <div class ="row">
@@ -49,13 +47,14 @@
               <h1 class="display-1">BRHS CODE Club</h1>
               <h4 id="est">Est. 2019</h4>
             </div>
-            <div class="col-md-auto">
+            <div class="col-md-3">
               <img id="brhs-logo" src="Images/brhs logo.png"  alt="BRHS Logo">
             </div>
-            <div class="col-md-auto">
+            <div class="col-md-3">
               <div id="model-3d">
                 <model-3d src="models/code logo-3d.glb"></model-3d>
               </div>
+              <h6>Try this 3-d model by dragging it around.</h6>
             </div>
         </div>
     </div>
@@ -106,7 +105,7 @@
                 and computation competion. The ACSL consists of mutliple divisions and in our first year,
                 the CODE CLub is competing in the second highest division: the intermediate division. ACSL
                 topics are unlike most things you learn in AP Computer Science A and AP Computer Science Principles.
-                We teach members all the conecpts they need to know from bit-string flicking to the LISP programming
+                We teach members all the concepts they need to know from bit-string flicking to the LISP programming
                 language.&nbsp
             <a style="color:rgb(154, 210, 255)" href="resources.html#acsl">More info . . .</a>
           </div>
@@ -133,8 +132,8 @@
           A new aspect of the CODE Club this year are hackathons! We will begin providing
             members with a few hackathons they can compete in every month, so that they can 
             learn different programming languages, frameworks, tools, and concepts. The best
-            hackathons can be found through the Major Legaue Hacking website, which is linked
-            below. To check out some of the projects that club offciers have made while 
+            hackathons can be found through the Major League Hacking website, which is linked
+            below. To check out some of the projects that club officers have made while 
             participating in hackathons this year, check out the GitHub Repositories linked below.
           <br>&emsp;<a style="color:rgb(154, 210, 255)" target="_blank" href="https:/mlh.io">Major League Hacking</a><br>
           &emsp;Our projects:
@@ -147,6 +146,7 @@
         <div class="text-justify">
           The newest part of the CODE Club is the free after school tutoring program. Students
             can pick a class they need help with and they will be matched up with a mentor who has already successfully completed the course.
+            Or, even if you are just looking to get into programming and learn the basics, we can help with that too!
             Tutoring sessions will take place after school between 12:30 and 2
             Tutoring is available for the following courses: 
           <ul>
@@ -161,8 +161,6 @@
       </div>
     </div>
     </div>
-
-    
 
     <div id="contact">
       <h1 class="text-center">Contact Us</h1>
@@ -180,5 +178,13 @@
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+      integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous">
+    </script>
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+      integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous">
+    </script>
 </body>
 </html>
