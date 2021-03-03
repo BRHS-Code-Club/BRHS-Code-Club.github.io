@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden; 
+}
+
 #activities {
     background-color: rgb(2, 70, 147);
     color: rgb(255, 255, 255);
@@ -8,7 +12,8 @@
     font-weight: 600;
 }
 #info {
-    margin: 2% 5%;
+    margin: 2% 0%;
+    padding: 0% 5%;
 }
 #contact {
     padding: 2% 0%;
@@ -20,26 +25,34 @@
 }
 
 #brhs-logo {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
+    margin: 15% 0%;
 }
 
 #model-3d {
-    width: 350px;
-    height: 300px;
+    width: 330px;
+    height: 270px;
 }
 
 #nav-logo {
     width: 80px;
     height: 80px;
 }
+.navbar-toggler-icon{
+    background-image: url(https://cdn3.iconfinder.com/data/icons/photo-camera-ui/512/mobile-navigation-bar-menu-responsive-ui-512.png);
+    }
 
-#main-nav{
+.main-nav{
     background-color: rgb(2, 70, 147);
 }
 
 .nav-item > a{
     color:white;
+}
+.col-md-3-5 {
+    width: 20%;
+    text-align: center;
 }
 
 #jumbo{
@@ -77,30 +90,35 @@
 }
 .pfp{
     margin-top: 10%;
+    margin-bottom: 10%;
     margin-left: 5%;
     width: 200px;
     height: 200px;
 }
 #pfp2{
     margin-top: 10%;
+    margin-bottom: 10%;
     margin-left: 5%;
     width: 200px;
     height: 200px;
 }
 #pfp3{
     margin-top: 10%;
+    margin-bottom: 10%;
     margin-left: 5%;
     width: 200px;
     height: 200px;
 }
 #pfp4{
     margin-top: 10%;
+    margin-bottom: 10%;
     margin-left: 5%;
     width: 200px;
     height: 200px;
 }
 #pfp5{
     margin-top: 10%;
+    margin-bottom: 10%;
     margin-left: 5%;
     width: 200px;
     height: 200px;
@@ -109,31 +127,31 @@
     padding-left: 8%;
     padding-top: 10%;
     background-color: beige;
-    height: 350px;
+    height: 100%;
 }
 #profile2 {
     padding-left: 5%;
     padding-top: 10%;
     background-color: rgb(209, 240, 255);
-    height: 350px;
+    height: 100%;
 }
 #profile3 {
     padding-left: 8%;
     padding-top: 10%;
     background-color: rgb(209, 240, 255);
-    height: 350px;
+    height: 100%;
 }
 #profile4 {
     padding-left: 5%;
     padding-top: 10%;
     background-color: beige;
-    height: 350px;
+    height: 100%;
 }
 #profile5 {
     padding-left: 8%;
     padding-top: 10%;
     background-color: beige;
-    height: 470px;
+    height: 100%;
 }
 #profile6 {
     background-color: rgb(209, 240, 255);
